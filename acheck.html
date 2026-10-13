@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - aCheck - Ian Santos Apps</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
+        h1 { color: #2c3e50; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+        .app-section { background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy &ndash; aCheck</h1>
+    <p>Last updated: October 2026</p>
+    <p>This Privacy Policy explains how aCheck (the "App"), developed by <strong>Ian Santos</strong>, collects, uses, stores, and deletes information, including how the optional Apple Health and Health Connect integration ("Health Sync") works.</p>
+
+    <h2>1. Account and Check-In Data</h2>
+    <div class="app-section">
+        <p><strong>Data Collected:</strong> Name, email, and check-in activity.</p>
+        <p><strong>Usage:</strong> This data is stored in <strong>Supabase</strong> so you can track your check-in history across devices and use the App's social features.</p>
+    </div>
+
+    <h2>2. Health Data Accessed</h2>
+    <p>If you enable Health Sync, aCheck requests <strong>read-only</strong> access to:</p>
+    <div class="app-section">
+        <ul>
+            <li><strong>Apple Health (iOS):</strong> workout records, including workout type, timing, and duration.</li>
+            <li><strong>Health Connect (Android):</strong> exercise sessions, including exercise type, timing, and duration, and pause/rest segments used to calculate active duration.</li>
+        </ul>
+    </div>
+    <p>aCheck does not request access to heart rate, medical records, or any other health categories through this integration. aCheck does not write to or modify your Apple Health or Health Connect data.</p>
+
+    <h2>3. Why Health Data Is Used</h2>
+    <p>Health data is used only to identify qualifying completed workouts and simplify your daily accountability check-ins. The criteria for a qualifying workout (for example, minimum active duration and excluded workout types) are described in the App's help documentation and may be updated over time.</p>
+
+    <h2>4. On-Device Processing and Server Storage</h2>
+    <ul>
+        <li><strong>On-device processing:</strong> Workout and exercise records are processed on your device. They are not uploaded to aCheck's servers.</li>
+        <li><strong>What is stored:</strong> When a workout results in a check-in, aCheck saves your account identifier, the check-in date, completion status, timestamp, and check-in source in <strong>Supabase</strong>.</li>
+        <li><strong>Check-in source:</strong> The source may indicate that a check-in came from a workout. The first source recorded for a given day is retained.</li>
+    </ul>
+    <p>Workout details such as activity type and duration are not stored on our servers.</p>
+
+    <h2>5. Background Access and Notifications</h2>
+    <ul>
+        <li><strong>iOS:</strong> When Health Sync is enabled, aCheck can receive background updates from Apple Health when workouts are saved and may show a local notification inviting you to check in.</li>
+        <li><strong>Android:</strong> aCheck reads Health Connect exercise data only while the App is open or when it resumes. aCheck does not read Health Connect data in the background.</li>
+    </ul>
+    <p>Workout-detection notifications are generated locally on your device. Workout details are not sent to OneSignal or any other push notification provider to deliver them.</p>
+
+    <h2>6. Social Visibility</h2>
+    <p>A check-in created from a workout behaves like a manual check-in:</p>
+    <ul>
+        <li>It can contribute to streaks, weekly summaries, group boards, and badges.</li>
+        <li>Check-in information (such as whether you checked in on a given day) may be visible to friends or group members through the App's existing features.</li>
+        <li>Workout details such as activity type and duration are <strong>not</strong> shared with other users through this integration.</li>
+        <li>Workout-generated check-ins do not automatically nudge your friends.</li>
+    </ul>
+
+    <h2>7. Consent and Controls</h2>
+    <ul>
+        <li>Health Sync is optional and <strong>off by default</strong>.</li>
+        <li>You must explicitly enable it in aCheck and grant the corresponding system permissions.</li>
+        <li>You can disable Health Sync at any time in aCheck, or revoke access through Apple Health (Settings &rarr; Health &rarr; Data Access &amp; Devices) or Health Connect.</li>
+        <li>Disabling Health Sync stops all future health-based processing. It does not automatically delete check-ins that were already saved.</li>
+    </ul>
+
+    <h2>8. Retention and Deletion</h2>
+    <ul>
+        <li><strong>Retention:</strong> Check-ins stored on our servers are retained for as long as your account is active, so that your history, streaks, and summaries remain available.</li>
+        <li><strong>Deleting your account:</strong> You can request deletion of your account and all associated check-in data by emailing <strong>ian6502022@gmail.com</strong> from the email address associated with your account.</li>
+        <li><strong>Timing and backups:</strong> Deletion requests are processed within 30 days. Residual copies in routine backups may persist for up to an additional 30 days before being overwritten, and are not used for any other purpose in the meantime.</li>
+        <li><strong>Exceptions:</strong> We may retain limited information where required by law.</li>
+    </ul>
+
+    <h2>9. Permitted Uses of Health Data</h2>
+    <p>Health data obtained through Apple Health or Health Connect is used only to provide the Health Sync feature described above. It is <strong>never sold</strong>, and it is not used for advertising, marketing, or unrelated profiling. It is not shared with third parties except as needed to provide the App's functionality (for example, storing check-in records in Supabase as described above).</p>
+
+    <h2>10. Third-Party Services</h2>
+    <ul>
+        <li><strong>Supabase:</strong> Secure database storage for account and check-in data.</li>
+        <li><strong>OneSignal:</strong> Push notifications for App features (not used for workout-detection notifications, and does not receive workout details).</li>
+        <li><strong>Apple Health / Health Connect:</strong> Platform health data sources, accessed read-only with your permission.</li>
+    </ul>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at: <strong>ian6502022@gmail.com</strong></p>
+
+    <p><a href="index.html">Back to Privacy Policy</a></p>
+</body>
+</html>
